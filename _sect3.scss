@@ -1,0 +1,188 @@
+.sect3 {
+    width: 100%;
+
+    .sect3f {
+        margin: 100px auto;
+        width: 50%;
+        text-align: center;
+
+        h5 {
+            color: $color1;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 36px;
+        }
+    }
+
+    .sect3s {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        div {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-weight: 400;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 10%;
+                    background-color: $color1;
+                    left: 0;
+                    bottom: -10px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: rgb(120, 120, 120);
+            }
+
+            a {
+                padding: 10px;
+                background-color: $color1;
+                width: 150px;
+                border-radius: 50px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .sect3t {
+        margin-top: 100px;
+        width: 100%;
+        min-height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 50px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+        -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+        div{
+            width: 40%;
+            display: flex;
+            padding: 0 20px;
+            i{
+                font-size: 50px;
+                color: $color1;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 5px;
+                margin-left: 5px;
+                gap: 5px;
+                span{
+                    color: $color1;
+                }
+            }
+            input{
+                width: 70%;
+                margin-right: 5px;
+                border-radius: 50px;
+                padding: 5px;
+            }
+            a{
+                padding: 10px;
+                background-color: $color1;
+                border-radius: 50px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .sect3ff{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        .ff1{
+            width: 50%;
+            h5{
+                color: $color1;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-weight: 400;
+            }
+        }
+        .ff2{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            .img{
+                flex: 1 1 calc(16% - 10px);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        a{
+            margin-top: 50px;
+            width: 150px;
+            padding: 10px;
+            background-color: $color1;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sect3{
+        .sect3f{
+            width: 100%;
+        }
+        .sect3s{
+            flex-direction: column-reverse;
+            div{
+                width: 100%;
+            }
+        }
+        .sect3t{
+            flex-direction: column;
+            div{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+            }
+        }
+        .sect3ff{
+            width: 100%;
+            .ff2{
+                .img{
+                    flex: 1 1 calc(30% - 10px);
+                }
+            }
+        }
+    }
+}

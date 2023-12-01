@@ -1,0 +1,53 @@
+.side {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 19;
+    display: none;
+
+    .cart {
+        width: 30%;
+        height: 40vh;
+        background-color: white;
+        opacity: 1;
+        border-radius: 15px;
+        position: fixed;
+        top: calc(50vh - 20vh);
+        left: calc(50% - 15%);
+        z-index: 20;
+        display: none;
+        transition: opacity 2s ease;
+
+        .cart1 {
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+
+            p {
+                font-size: 24px;
+            }
+
+            button {
+                font-size: 20px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+
+        .cart2 {
+            width: 100%;
+            height: calc(100% - 50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

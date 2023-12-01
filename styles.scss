@@ -1,0 +1,26 @@
+$color1 : #a5c926;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 32px;
+}
+
+@import 'nav';
+@import 'sad';
+@import 'sect';
+@import 'paral';
+@import 'sect3';
+@import 'footer';
+@import 'side';

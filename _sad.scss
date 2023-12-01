@@ -1,0 +1,67 @@
+.sad{
+    background-image: url('https://assets.website-files.com/5badda2935e11303a89a461e/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    .tedi{
+        width: 40%;
+        height: 300px;
+        background-color: white;
+        color: black;
+        position: relative;
+        top: 250px;
+        left: 30%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 40px;
+        p{
+            color: $color1;
+            font-weight: 600;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            background-color: $color1;
+            padding: 15px;
+            border-radius: 50px;
+            color: white;
+            transition: 0.3s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    button{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        border-radius: 9999999px;
+        border: none;
+        left: calc(50% - 30px);
+        bottom: -30px;
+        background-color: white;
+    }
+}
+@media screen and (max-width:1024px) {
+    .sad{
+        .tedi{
+            width: 60%;
+            left: 20%;
+        }
+        button{
+            display: none;
+        }
+    }
+}
